@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoTravel</title>
+  </head>
+  <body>
+    <!-- 
+      NOTA SOBRE LA NAVEGACIÓN:
+      La navegación se mantiene en la parte superior del documento porque, según 
+      las restricciones del proyecto, solo se puede utilizar HTML puro (sin CSS ni JavaScript).
+      Por lo tanto, no es posible implementar una barra de navegación "sticky" (fija al hacer scroll)
+      sin violar las instrucciones. Para mejor accesibilidad, se incluye navegación adicional en el footer.
+    -->
+    <header>
+      <h1>Bienvenido a EcoTravel</h1>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#destinos">Destinos</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+    <main>
+      <section id="inicio">
+        <h2>Bienvenido a EcoTravel</h2>
+        <p>
+          Descubre los destinos más hermosos de Costa Rica con EcoTravel, tu
+          agencia de turismo especializada en experiencias ecológicas y
+          aventuras naturales.
+        </p>
+        <p>
+          Ofrecemos paquetes turísticos personalizados que te permitirán
+          conectar con la naturaleza, explorar biodiversidad única y crear
+          recuerdos inolvidables.
+        </p>
+        <h3>¿Por qué elegir EcoTravel?</h3>
+        <ul>
+          <li>Experiencias auténticas en la naturaleza</li>
+          <li>Guías expertos y seguros</li>
+          <li>Precios competitivos y paquetes flexibles</li>
+          <li>Compromiso con la sostenibilidad ambiental</li>
+        </ul>
+      </section>
+      <section id="destinos">
+        <article>
+          <h2>San Vicente Hideaway</h2>
+          <figure>
+            <img src="img/529517392.jpg" alt="cataratas de San Vicente" />
+            <figcaption>Cataratas de San Vicente</figcaption>
+          </figure>
+          <p>
+            Disfruta de las impresionantes cataratas de San Vicente en medio de
+            la naturaleza.
+          </p>
+          <p>Precio: $6 por caminata a las pozas</p>
+          <ul>
+            <li>Caminata a las pozas</li>
+            <li>Fotografía de cataratas</li>
+            <li>Relax en la naturaleza</li>
+          </ul>
+          <ol>
+            <li>Seleccionar destino</li>
+            <li>Seleccionar fecha</li>
+            <li>Completar formulario</li>
+            <li>Confirmar reserva</li>
+          </ol>
+          <a href="san-vicente.html">Solicitar información</a>
+        </article>
+        <article>
+          <h2>Catarata Río Fortuna</h2>
+          <figure>
+            <img
+              src="img/La_Fortuna_WaterFall___1_.jpg"
+              alt="Catarata Río Fortuna"
+            />
+            <figcaption>Catarata Río Fortuna</figcaption>
+          </figure>
+          <p>
+            Disfruta de la imponente caída de agua de 70 metros rodeada de una
+            exuberante selva tropical y una refrescante piscina natural.
+          </p>
+          <p>Precio: $20 por entrada general</p>
+          <ul>
+            <li>Senderismo por senderos</li>
+            <li>Piscina natural</li>
+            <li>Observación de fauna</li>
+          </ul>
+          <ol>
+            <li>Seleccionar destino</li>
+            <li>Seleccionar fecha</li>
+            <li>Completar formulario</li>
+            <li>Confirmar reserva</li>
+          </ol>
+          <a href="rio-fortuna.html">Solicitar información</a>
+        </article>
+        <article>
+          <h2>Volcán Arenal</h2>
+          <figure>
+            <img src="img/arenal.jpg" alt="Parque Nacional Volcán Arenal" />
+            <figcaption>Senderos del Volcán Arenal</figcaption>
+          </figure>
+          <p>
+            Camina sobre antiguas coladas de lava y recorre senderos únicos con
+            vistas panorámicas al volcán más famoso de Costa Rica.
+          </p>
+          <p>Precio: $15 por entrada para no residentes</p>
+          <ul>
+            <li>Senderismo en la zona volcánica</li>
+            <li>Miradores del volcán</li>
+            <li>Termales o relajación</li>
+          </ul>
+          <ol>
+            <li>Seleccionar destino</li>
+            <li>Seleccionar fecha</li>
+            <li>Completar formulario</li>
+            <li>Confirmar reserva</li>
+          </ol>
+          <a href="volcan-arenal.html">Solicitar información</a>
+        </article>
+        <article>
+          <h2>Mistico Park</h2>
+          <figure>
+            <img
+              src="img/puentes_colgantes.jpg"
+              alt="Puentes Colgantes Mistico Arenal"
+            />
+            <figcaption>Puentes Colgantes en Mistico Park</figcaption>
+          </figure>
+          <p>
+            Explora las copas de los árboles a través de puentes colgantes
+            imponentes, ideales para observar aves, perezosos y la biodiversidad
+            del bosque.
+          </p>
+          <p>Precio: $32 por recorrido auto-guiado</p>
+          <ul>
+            <li>Puentes colgantes</li>
+            <li>Canopy o zipline</li>
+            <li>Avistamiento de aves</li>
+          </ul>
+          <ol>
+            <li>Seleccionar destino</li>
+            <li>Seleccionar fecha</li>
+            <li>Completar formulario</li>
+            <li>Confirmar reserva</li>
+          </ol>
+          <a href="mistico-park.html">Solicitar información</a>
+        </article>
+      </section>
+      <section id="paquetes">
+        <h2>Paquetes turísticos</h2>
+        <!-- 
+          NOTA SOBRE LA ESTRUCTURA DE TABLA ANIDADA:
+          Se utilizó una tabla externa con celdas <td> para colocar la tabla de paquetes 
+          y el <aside> (anuncio) lado a lado. Esto se debe a que las restricciones del proyecto 
+          prohíben el uso de <div> para estructuras de layout. Como no se permite CSS ni <div>, 
+          la única alternativa disponible en HTML puro es usar una tabla como contenedor.
+          Esta es una solución pragmática permitida por el profesor para mostrar múltiples 
+          elementos de contenido en columnas sin violar las restricciones.
+        -->
+        <table>
+          <tr>
+            <td>
+              <table>
+                <caption>
+                  <strong> Paquetes turísticos </strong>
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Destino</th>
+                    <th>Duración</th>
+                    <th>Actividad</th>
+                    <th>Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>San Vicente Hideaway</td>
+                    <td>1 día</td>
+                    <td>Caminata a las pozas</td>
+                    <td>$25</td>
+                  </tr>
+                  <tr>
+                    <td>Catarata Río Fortuna</td>
+                    <td>1 día</td>
+                    <td>Senderismo + piscina natural</td>
+                    <td>$35</td>
+                  </tr>
+                  <tr>
+                    <td>Volcán Arenal</td>
+                    <td>2 días</td>
+                    <td>Senderismo + miradores + termales</td>
+                    <td>$60</td>
+                  </tr>
+                  <tr>
+                    <td>Mistico Park</td>
+                    <td>1 día</td>
+                    <td>Puentes colgantes + canopy</td>
+                    <td>$45</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td>
+              <aside>
+                <h3>Promoción especial</h3>
+                <a href="https://www.gollo.com/credito">
+                  <img
+                    src="img/solo_bueno.webp"
+                    alt="Anuncio"
+                    width="180"
+                    height="120"
+                  />
+                </a>
+              </aside>
+            </td>
+            <td>
+              <p>
+                Discúlpenos por esta aberración de anuncio, pero nadie contrata
+                nuestros servicios y necesitamos plata!
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p>
+          Para más información sobre los paquetes, por favor contacte con
+          nosotros.
+        </p>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="Ingrese su nombre"
+          />
+          <br />
+
+          <label for="correo">Correo:</label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            required
+            placeholder="correo@ejemplo.com"
+          />
+          <br />
+
+          <label for="telefono">Teléfono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="24757573"
+          />
+          <br />
+
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" />
+          <br />
+
+          <label for="personas">Cantidad de personas:</label>
+          <input type="number" id="personas" name="personas" min="1" max="20" />
+          <br />
+
+          <label for="destino">Destino:</label>
+          <select id="destino" name="destino">
+            <option value="San Vicente Hideaway">San Vicente Hideaway</option>
+            <option value="Catarata Río Fortuna">Catarata Río Fortuna</option>
+            <option value="Volcán Arenal">Volcán Arenal</option>
+            <option value="Mistico Park">Mistico Park</option>
+          </select>
+          <br />
+          <label>Actividades de interés:</label>
+          <br>
+          <input
+            type="checkbox"
+            id="senderismo"
+            name="actividades"
+            value="Senderismo"
+          />
+          <label for="senderismo">Senderismo</label>
+          <br />
+
+          <input
+            type="checkbox"
+            id="canopy"
+            name="actividades"
+            value="Canopy"
+          />
+          <label for="canopy">Canopy</label>
+          <br />
+
+          <input
+            type="checkbox"
+            id="rafting"
+            name="actividades"
+            value="Rafting"
+          />
+          <label for="rafting">Rafting</label>
+          <br />
+
+          <input
+            type="checkbox"
+            id="fotografía"
+            name="actividades"
+            value="Fotografía"
+          />
+          <label for="fotografía">Fotografía</label>
+          <br />
+
+          <input
+            type="checkbox"
+            id="observación"
+            name="actividades"
+            value="Observación de fauna"
+          />
+          <label for="observación">Observación de fauna</label>
+          <br />
+          <label for="comentarios">Comentarios:</label>
+          <br>
+          <textarea id="comentarios" name="comentarios"></textarea>
+          <br />
+
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p><strong>EcoTravel</strong> © 2026</p>
+      <p>Correo: info@ecotravel.com</p>
+      <p>Teléfono: +506 2479-0000</p>
+      <nav>
+        <a href="#inicio">Inicio</a> | 
+        <a href="#destinos">Destinos</a> | 
+        <a href="#paquetes">Paquetes</a> | 
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </footer>
+  </body>
+</html>
