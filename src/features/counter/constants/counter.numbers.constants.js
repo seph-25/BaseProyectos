@@ -1,0 +1,6 @@
+export const COUNTER_NUMBERS = {
+    MAX_COUNT: 5,
+    MIN_COUNT: 0,
+    INCREMENT_VALUE: 1,
+    DECREMENT_VALUE: 1
+}
