@@ -1,5 +1,6 @@
 import './App.css'
 import { CounterLayout } from './features/counter/counterLayout'
+import { RegisterLayout } from './features/register/registerLayout'
 import { GLOBAL_CONSTANTS } from './shared/constants/global.constants'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <h1>{GLOBAL_CONSTANTS.APP_NAME}</h1>
       <CounterLayout/>
+      <RegisterLayout/>
     </>
   )
 }
