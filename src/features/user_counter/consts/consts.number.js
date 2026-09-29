@@ -1,0 +1,6 @@
+export const USER_COUNTER_NUMBERS = {
+    INITIAL_COUNT: 0,
+    INCREMENT: 1,
+    DECREMENT: -1,
+    MAX_COUNT: 5
+}
