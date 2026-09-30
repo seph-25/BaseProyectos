@@ -5,12 +5,24 @@ import  useCounter from "../hooks/useCounter";
 export function RegisterUser({count, setCount}) {
 
   const {handleIncrement} = useCounter(setCount)
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    if (count < USER_COUNTER_NUMBERS.MAX_COUNT) {
+      handleIncrement();
+      event.target.reset();
+    }
+  }
   
   return (
     <>
       <h2>{USER_COUNTER_TEXT.USER_COUNTER_TITLE}</h2>
-      <form onSubmit={count < USER_COUNTER_NUMBERS.MAX_COUNT ? handleIncrement : null }>
-        <label htmlFor="user-name">{USER_COUNTER_TEXT.LABEL_NAME}</label>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="user-name">
+          {USER_COUNTER_TEXT.LABEL_NAME}
+        </label>
+        
         <input
           type="text"
           id="user-name"
@@ -18,7 +30,10 @@ export function RegisterUser({count, setCount}) {
           required
         />
         <br />
-        <button type="submit" onClick= >
+        <button 
+          type="submit" 
+          disabled={count >= USER_COUNTER_NUMBERS.MAX_COUNT}
+        >
           {USER_COUNTER_TEXT.ADD}
         </button>
       </form>
