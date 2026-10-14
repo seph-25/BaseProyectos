@@ -1,0 +1,33 @@
+
+.button {
+  margin-left: 10px;
+}
+
+.select {
+  margin-left: 10px;
+}
+
+.product-table {
+  border: 1px solid #ccc;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  place-content: center;
+  place-items: center;
+}
+
+
+.table-header {
+  content: normal;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
